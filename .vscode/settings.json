@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "spine-sdl-c.h": "c",
+        "stb_image.h": "c",
+        "extension.h": "c",
+        "spine-opengl.h": "c",
+        "stddef.h": "c",
+        "spine.h": "c"
+    }
+}
