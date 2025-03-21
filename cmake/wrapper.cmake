@@ -7,14 +7,16 @@ endif()
 
 find_package(Python3 REQUIRED COMPONENTS Development.SABIModule)
 
+aux_source_directory(${PROJECT_ROOT}/wrapper/src WRAPPER_SRC)
 add_library(spine-py SHARED 
-    ${PROJECT_ROOT}/Wrapper/spine-py.cpp
+    ${WRAPPER_SRC}
 )
 
 target_include_directories(spine-py PRIVATE 
     ${PROJECT_ROOT}/spine-c/spine-c/include
-    ${PROJECT_ROOT}/Glad/include
+    ${PROJECT_ROOT}/glad/include
     ${PROJECT_ROOT}/spine-opengl/include
+    ${PROJECT_ROOT}/wrapper/include
 )
 
-target_link_libraries(spine-py glad spine-c spine-opengl)
+target_link_libraries(spine-py glad spine-c spine-opengl Python3::SABIModule)

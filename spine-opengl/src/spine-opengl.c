@@ -159,7 +159,7 @@ void spSkeletonDrawable_update(spSkeletonDrawable *self, float delta, spPhysics 
 	spSkeleton_updateWorldTransform(self->skeleton, physics);
 }
 
-void spSkeletonDrawable_draw(spSkeletonDrawable *self, struct SDL_Renderer *renderer)
+void spSkeletonDrawable_draw(spSkeletonDrawable *self)
 {
 	static unsigned short quadIndices[] = {0, 1, 2, 2, 3, 0};
 	spSkeleton *skeleton = self->skeleton;

@@ -1,1 +1,1 @@
-add_subdirectory(${PROJECT_ROOT}/Glad)
+add_subdirectory(${PROJECT_ROOT}/glad)

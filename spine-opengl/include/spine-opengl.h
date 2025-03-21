@@ -88,7 +88,7 @@ SP_API void spSkeletonDrawable_dispose(spSkeletonDrawable *self);
 
 SP_API void spSkeletonDrawable_update(spSkeletonDrawable *self, float delta, spPhysics physics);
 
-SP_API void spSkeletonDrawable_draw(spSkeletonDrawable *self, struct SDL_Renderer *renderer);
+SP_API void spSkeletonDrawable_draw(spSkeletonDrawable *self);
 
 #ifdef __cplusplus
 }

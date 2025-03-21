@@ -6,8 +6,8 @@ target_include_directories(glfw-example
     PRIVATE
     ${PROJECT_ROOT}/spine-c/spine-c/include
     ${PROJECT_ROOT}/spine-opengl/include
-    ${PROJECT_ROOT}/Glad/include
-    ${PROJECT_ROOT}/GLFW/include
+    ${PROJECT_ROOT}/glad/include
+    ${PROJECT_ROOT}/glfw/include
 )
 
 target_link_options(glfw-example PRIVATE 
@@ -15,7 +15,7 @@ target_link_options(glfw-example PRIVATE
 )
 
 target_link_libraries(glfw-example 
-    ${PROJECT_ROOT}/GLFW/lib/glfw3.lib
+    ${PROJECT_ROOT}/glfw/lib/glfw3.lib
     spine-opengl
 )
 
